@@ -2,40 +2,22 @@
 
 _basado en el documento alist_
 
-If the relative value acts like Superman, then the absolute value mirrors Inception—a place where you design your own world. Unlike the static and relative values, an absolutely positioned element is removed from the normal flow. This means you can put it anywhere, and it won’t affect or be affected by any other element in the flow. Think of it as an element with a giant strip of velcro on its back. Just tell it where to stick and it sticks. Exactly like the relative value, absolutely positioned elements respond to offset properties for positioning. You can set an element to top: 100px and left: 200px; and that element will sit exactly 100px from the top and 200px from the left of the document. Let’s look at an example using four elements:
+Not to be outdone by other position property values, the absolute value offers some really cool functionality using the offset property. Use two or all four offset properties, and you can stretch an element without defining any width or height—it’s bound only by its parent element or the document itself. Let’s see it in action. Consider the following code:
 
-#box_1 {
+#box_a {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 200px;
-	height: 200px;
-	background: #ee3e64;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	left: 10px;
+	background: red;
 }
-#box_2 {
+#box_b {
 	position: absolute;
-	top: 0;
-	right: 0;
-	width: 200px;
-	height: 200px;
-	background: #44accf;
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+	left: 20px;
+	background: white;
 }
-#box_3 {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 200px;
-	height: 200px;
-	background: #b7d84b;
-}
-#box_4 {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 200px;
-	height: 200px;
-	background: #ebde52;
-}
-Example E shows four boxes, each in a corner of the browser window. Since we set each box’s position value to absolute, we’ve essentially velcroed a box to each corner of our browser window. As you resize the browser, those boxes will stay in their respective corners. If you shrink the browser window so that the boxes overlap, you’ll notice that there is no interaction at all—that’s because they’re out of the document’s normal flow.
-
-**Just like relative elements, absolute elements create a new coordinate system for child elements. Example F extends Example E, with an orange element set inside each box. Notice the offset coordinates are in respect to each parent element.**
+In example G we’ve created a border offset 10 pixels by the document, and it’s entirely fluid as the document resize—all with absolute positioning and offsets. 
