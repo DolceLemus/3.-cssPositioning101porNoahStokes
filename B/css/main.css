@@ -1,7 +1,7 @@
 div{
-    width: 12.5em;/*cada em es igual a 16px http://pxtoem.com/*/
     height: 12.5em;
     position: relative;
+    width: 12.5em;/*cada em es igual a 16px http://pxtoem.com/*/
 }
 #box_1 {
 	background: #ee3e64;
