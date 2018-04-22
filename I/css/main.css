@@ -1,0 +1,15 @@
+div {
+    position: absolute;
+}
+
+#box_1 {
+    background: #ee3e64;
+}
+
+#box_2 {
+    background: #44accf;
+    position: fixed;
+    bottom: 0;
+    height: 10em;
+    width: 20em;
+}
