@@ -1,0 +1,15 @@
+div {
+    height: 12.5em;
+    width: 12.5em;
+}
+
+#box_1 {
+    background: #ee3e64;
+}
+
+#box_2 {
+    position: absolute;
+    background: #44accf;
+    left:6.25em;
+
+}
