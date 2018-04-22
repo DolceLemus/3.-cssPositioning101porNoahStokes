@@ -1,28 +1,39 @@
 # instrucciones
 
-In example A, you can see three elements stacked like a simple tower. Fascinating, isn’t it? This is block building 101. Congratulations!
+_basado en el documento alist_
 
-You can use the static value for simple, single-column layouts where each element must sit on top of the next one. If you want to start shifting those elements around using offset properties such as top, right, bottom, and left, you’re out of luck. These properties are unavailable to a static element. In fact, a static element can’t even create a new coordinate system for child elements. Wait. What? You lost me at coordinate system. Roger that, Roger. Let’s explain using the relative value.
-
-Relatively positioned elements behave just like statically positioned elements; they play well with others, stack nicely, and don’t cause a ruckus. Hard to believe, right? Take a look at our previous example. This time, we’ve applied the relative value:
+If the relative value acts like Superman, then the absolute value mirrors Inception—a place where you design your own world. Unlike the static and relative values, an absolutely positioned element is removed from the normal flow. This means you can put it anywhere, and it won’t affect or be affected by any other element in the flow. Think of it as an element with a giant strip of velcro on its back. Just tell it where to stick and it sticks. Exactly like the relative value, absolutely positioned elements respond to offset properties for positioning. You can set an element to top: 100px and left: 200px; and that element will sit exactly 100px from the top and 200px from the left of the document. Let’s look at an example using four elements:
 
 #box_1 {
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 200px;
 	height: 200px;
 	background: #ee3e64;
 }
-
 #box_2 {
-	position: relative;
+	position: absolute;
+	top: 0;
+	right: 0;
 	width: 200px;
 	height: 200px;
 	background: #44accf;
 }
-
 #box_3 {
-	position: relative;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	width: 200px;
 	height: 200px;
 	background: #b7d84b;
 }
+#box_4 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	background: #ebde52;
+}
+Example E shows four boxes, each in a corner of the browser window. Since we set each box’s position value to absolute, we’ve essentially velcroed a box to each corner of our browser window. As you resize the browser, those boxes will stay in their respective corners. If you shrink the browser window so that the boxes overlap, you’ll notice that there is no interaction at all—that’s because they’re out of the document’s normal flow.
