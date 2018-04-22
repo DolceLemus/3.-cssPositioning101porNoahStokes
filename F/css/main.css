@@ -1,0 +1,36 @@
+div {
+    height: 12.5em;
+    position: absolute;
+    width: 12.5em;
+    /*cada em es igual a 16px http://pxtoem.com/*/
+}
+div > div {
+    background: orange;
+    height: 2.5em;
+    width: 2.5em;
+    bottom: 40%;
+    right: 40%;
+}
+#box_1 {
+    background: #ee3e64;
+    left: 0;
+    top: 0;
+}
+
+#box_2 {
+    background: #44accf;
+    right: 0;
+    top: 0;
+}
+
+#box_3 {
+    background: #b7d84b;
+    bottom: 0;
+    left: 0;
+}
+
+#box_4 {
+    background: rgb(126, 46, 187);
+    bottom: 0;
+    right: 0;
+}
