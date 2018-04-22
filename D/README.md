@@ -1,28 +1,10 @@
 # instrucciones
 
-In example A, you can see three elements stacked like a simple tower. Fascinating, isn’t it? This is block building 101. Congratulations!
+_basado en el documento alist_
 
-You can use the static value for simple, single-column layouts where each element must sit on top of the next one. If you want to start shifting those elements around using offset properties such as top, right, bottom, and left, you’re out of luck. These properties are unavailable to a static element. In fact, a static element can’t even create a new coordinate system for child elements. Wait. What? You lost me at coordinate system. Roger that, Roger. Let’s explain using the relative value.
+Creating a coordinate system for child elements is another one of the relative positioning property’s super powers. A coordinate system is a reference point for offset properties. Recall in example C, our blue block (#box_2) is not sitting inside of any other elements, so the coordinate system it’s using to offset itself 200 pixels from the left is the document itself. If we place the #box_2 element inside of #box_1, we’ll get a different result, as #box_2 will position itself relative to the coordinate system from #box_1. For the next example, we won’t change any CSS, we’ll adjust our HTML to move #box_2 inside of #box_1:
 
-Relatively positioned elements behave just like statically positioned elements; they play well with others, stack nicely, and don’t cause a ruckus. Hard to believe, right? Take a look at our previous example. This time, we’ve applied the relative value:
-
-#box_1 {
-	position: relative;
-	width: 200px;
-	height: 200px;
-	background: #ee3e64;
-}
-
-#box_2 {
-	position: relative;
-	width: 200px;
-	height: 200px;
-	background: #44accf;
-}
-
-#box_3 {
-	position: relative;
-	width: 200px;
-	height: 200px;
-	background: #b7d84b;
-}
+<div id="box_1">
+	<div id="box_2"></div>
+</div>
+Example D shows our new markup. Because of the new coordinate system, the blue block measures its offset 200 pixels from the left of the red block (#box_1) instead of the document. This practice is more common with elements set to position: absolute—the way you wish you could have built towers when you were younger.
