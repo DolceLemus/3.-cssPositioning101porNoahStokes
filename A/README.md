@@ -1,28 +1,27 @@
 # instrucciones
 
-In example A, you can see three elements stacked like a simple tower. Fascinating, isn’t it? This is block building 101. Congratulations!
+_basado en el documento alist_
 
-You can use the static value for simple, single-column layouts where each element must sit on top of the next one. If you want to start shifting those elements around using offset properties such as top, right, bottom, and left, you’re out of luck. These properties are unavailable to a static element. In fact, a static element can’t even create a new coordinate system for child elements. Wait. What? You lost me at coordinate system. Roger that, Roger. Let’s explain using the relative value.
-
-Relatively positioned elements behave just like statically positioned elements; they play well with others, stack nicely, and don’t cause a ruckus. Hard to believe, right? Take a look at our previous example. This time, we’ve applied the relative value:
+The static and relative position properties behave like your childhood blocks—they stack as you would expect. Note that static is the default position value of an element, should you fail to apply any other value. If you have three statically positioned elements in your code, they will stack one on top of the next, as you might expect. Let’s take a look at an example with three elements, all with a position value of static:
 
 #box_1 {
-	position: relative;
+	position: static;
 	width: 200px;
 	height: 200px;
 	background: #ee3e64;
 }
 
 #box_2 {
-	position: relative;
+	position: static;
 	width: 200px;
 	height: 200px;
 	background: #44accf;
 }
 
 #box_3 {
-	position: relative;
+	position: static;
 	width: 200px;
 	height: 200px;
 	background: #b7d84b;
 }
+In example A, you can see three elements stacked like a simple tower. Fascinating, isn’t it? This is block building 101. Congratulations!

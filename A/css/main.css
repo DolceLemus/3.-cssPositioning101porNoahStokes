@@ -1,0 +1,16 @@
+div{
+    width: 12.5em;/*cada em es igual a 16px http://pxtoem.com/*/
+    height: 12.5em;
+    position: static;
+}
+#box_1 {
+	background: #ee3e64;
+}
+
+#box_2 {
+	background: #44accf;
+}
+
+#box_3 {
+	background: #b7d84b;
+}
