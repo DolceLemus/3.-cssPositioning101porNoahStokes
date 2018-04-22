@@ -1,6 +1,6 @@
 div{
     height: 12.5em;
-    position: relative;
+    position: static;
     width: 12.5em;/*cada em es igual a 16px http://pxtoem.com/*/
 }
 #box_1 {
@@ -9,6 +9,8 @@ div{
 
 #box_2 {
 	background: #44accf;
+    left: 12.5em;
+    position: relative;
 }
 
 #box_3 {
