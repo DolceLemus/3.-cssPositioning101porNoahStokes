@@ -31,6 +31,8 @@ p {
     position: relative;
     padding-left: 1em;
     padding-right: 12.5em;
+    box-sizing: border-box;
+
 }
 
 #container {
@@ -62,12 +64,13 @@ p {
 }
 
 #aside {
-    position: absolute;
-    top: 4em;
+    float: right;
+    top: -70em;
     right: -8em;
     background-color: rgb(134, 47, 142);
     width: 20em;
-    bottom: 0;
+    height: 80em;
+    position: relative;
 }
 
 #footer {
